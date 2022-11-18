@@ -1,0 +1,62 @@
+{
+  "signup": [
+    {
+      "fname": "ihateu",
+      "lname": "audi",
+      "email": "manojadhikari@gmail.com",
+      "phone": "234324234",
+      "password": "dontknow",
+      "id": 1
+    },
+    {
+      "fname": "ilovu",
+      "lname": "adhikari",
+      "email": "shivamadhikari@gmail.com",
+      "phone": "32432",
+      "password": "metoo",
+      "id": 2
+    },
+    {
+      "fname": "Satya",
+      "lname": "Pal",
+      "email": "aditya.singh@espire.com",
+      "password": "lovu",
+      "id": 3
+    },
+    {
+      "fname": null,
+      "lname": null,
+      "email": "deepraj7196362singh@gmail.com",
+      "password": "7196362_Dr",
+      "id": 4
+    },
+    {
+      "fname": "muskan",
+      "lname": "kimothi",
+      "email": "mk@gmail.com",
+      "password": "mk",
+      "id": 5
+    },
+    {
+      "fname": "muskan",
+      "lname": "kimothi",
+      "email": "muskan",
+      "password": "mk",
+      "id": 6
+    },
+    {
+      "fname": null,
+      "lname": null,
+      "email": "Satya",
+      "password": "lovu",
+      "id": 7
+    },
+    {
+      "fname": null,
+      "lname": null,
+      "email": null,
+      "password": null,
+      "id": 8
+    }
+  ]
+}

@@ -1,0 +1,112 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "Automation",
+      "author": "Muskan Kimothi",
+      "date": "2022-11-12",
+      "description": "Automated testing is a process that validates if software is functioning appropriately and meeting requirements before it is released into production. This software testing method uses scripted sequences that are executed by testing tools.",
+      "image": "https://material.angular.io/assets/img/examples/shiba2.jpg"
+    },
+    {
+      "id": 2,
+      "title": "Good ",
+      "author": "Deepak Raja",
+      "date": "2022-11-12",
+      "description": "A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was originally bred for hunting.",
+      "source": "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerJoyrides.mp4"
+    },
+    {
+      "id": 3,
+      "title": "Automation",
+      "author": "Sanath",
+      "date": "2022-11-12",
+      "description": "Automated testing is a process that validates if software is functioning appropriately and meeting requirements before it is released into production. This software testing method uses scripted sequences that are executed by testing tools.",
+      "image": "https://material.angular.io/assets/img/examples/shiba2.jpg"
+    },
+    {
+      "title": "Testing",
+      "author": "Muskan",
+      "description": "sdfg",
+      "date": "2022-11-12",
+      "image": "https://material.angular.io/assets/img/examples/shiba2.jpg",
+      "id": 5
+    },
+    {
+      "title": "",
+      "author": "",
+      "description": "",
+      "image": "",
+      "source": "",
+      "date": "2022-11-17",
+      "id": 6
+    }
+  ],
+  "comments": [
+    {
+      "comment": "second post",
+      "postId": 2,
+      "cardId": "2",
+      "id": 8
+    },
+    {
+      "comment": "",
+      "postId": 2,
+      "cardId": "2",
+      "id": 9
+    },
+    {
+      "comment": "",
+      "postId": 2,
+      "cardId": "2",
+      "id": 10
+    },
+    {
+      "comment": "hello",
+      "postId": 2,
+      "cardId": "2",
+      "id": 11
+    },
+    {
+      "comment": "",
+      "postId": 2,
+      "cardId": "2",
+      "id": 16
+    },
+    {
+      "comment": "",
+      "postId": 2,
+      "cardId": "2",
+      "id": 18
+    },
+    {
+      "comment": "ssssss",
+      "postId": 2,
+      "cardId": "2",
+      "id": 19
+    },
+    {
+      "comment": "",
+      "postId": 2,
+      "cardId": "2",
+      "id": 20
+    },
+    {
+      "comment": "jjkjkjjkj",
+      "postId": 2,
+      "cardId": "2",
+      "id": 21
+    },
+    {
+      "comment": "jjkjkjjkj",
+      "postId": 2,
+      "cardId": "2",
+      "id": 22
+    }
+  ],
+  "likes": [],
+  "profile": {
+    "name": "typicode",
+    "profile-image": ""
+  }
+}

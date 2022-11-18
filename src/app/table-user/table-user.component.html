@@ -1,0 +1,168 @@
+
+<div class="input-group mb-3" style="background-color: #0d6efd;">
+
+    <span class="input-group-text" id="basic-addon1" style="    color: blue;">Search</span>
+
+    <input #description (keyup)="0" type="text"  class="form-control" placeholder="Search Posts" aria-label="Username"  style="background-color: antiquewhite;" aria-describedby="basic-addon1" />
+
+</div>
+
+<table class="table">
+
+    <thead>
+
+      <tr>
+
+        <th scope="col">ID</th>
+
+        <th scope="col">TITLE</th>
+
+        <th scope="col">AUTHOR</th>
+
+        <th scope="col">DESCRIPTION</th>
+
+        <th scope="col">IMAGE/VIDEO</th>
+
+        <th scope="col">Date</th>
+
+      </tr>
+
+    </thead> 
+    <tbody>
+
+        <tr *ngFor="let card of cardService.cards | search: description.value">
+  
+          <td scope="row">{{card.id}}</td>
+  
+          <td scope="row">{{card.title}}</td>
+  
+          <td>{{card.author}}</td>
+  
+          <td>{{card.description}}</td>
+  
+          <td>{{card.image}}</td>
+  
+          <td>{{card.date}}</td>
+  
+           {{card.source}} 
+  
+        </tr>  
+  
+      </tbody>
+  
+    </table>
+
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous"> 
+
+
+
+    <!-- <meta name="viewport" content=
+        "width=device-width, initial-scale=1.0">
+  
+     Set title of web page
+    <title>GFG Animated Table</title>
+  
+    <style>
+  
+        /* Set the content of table 
+        using css properties */
+        body {
+            width: 700px;
+            margin: auto;
+            text-align: center;
+            table-layout: fixed;
+        }
+  
+        
+        table,
+        td,
+        tr {
+            padding: 12px;
+            color: wheat;
+            background: indigo;
+            border: 1px solid black;
+            border-collapse: collapse;
+            font-size: 20px;
+            font-family: 'Lucida Sans', 
+                'Lucida Sans Regular',
+                'Lucida Grande', 
+                'Lucida Sans Unicode',
+                Geneva, Verdana, sans-serif;
+        }
+  
+        /* Apply css properties to th */
+        th {
+            color: white;
+            border: 1px solid black;
+            border-collapse: collapse;
+            background: cadetblue;
+        }
+  
+        /* Apply hover effect to td */
+        td:hover {
+            background: orangered;
+        }
+    </style>
+
+  
+<body>
+
+  <div class="input-group mb-3" style="background-color: #0d6efd;">
+
+    <span class="input-group-text" id="basic-addon1">Search</span>
+
+    <input #description (keyup)="0" type="text"  class="form-control" placeholder="Search Posts" aria-label="Username" aria-describedby="basic-addon1" />
+
+</div>
+  
+ 
+    <thead>
+
+      <tr>
+
+        <th scope="col">ID</th>
+
+        <th scope="col">TITLE</th>
+
+        <th scope="col">AUTHOR</th>
+
+        <th scope="col">DESCRIPTION</th>
+
+        <th scope="col">IMAGE/VIDEO</th>
+
+        <th scope="col">Date</th>
+
+      </tr>
+
+    </thead> 
+
+
+    <tbody>
+
+      <tr *ngFor="let card of cardService.cards | search: description.value">
+
+        <td scope="row">{{card.id}}</td>
+
+        <td scope="row">{{card.title}}</td>
+
+        <td>{{card.author}}</td>
+
+        <td>{{card.description}}</td>
+
+        <td>{{card.image}}</td>
+
+        <td>{{card.date}}</td>
+
+         {{card.source}} 
+
+      </tr>  
+
+    </tbody>
+
+ 
+
+       
+   
+</body> -->
+  

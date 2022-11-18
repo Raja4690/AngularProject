@@ -1,0 +1,316 @@
+
+
+   .example-card {
+
+    max-width: 600px;
+
+  }
+
+.mat-drawer-container {
+
+    /* background-color: #3f51b5; */
+
+
+
+  color: rgba(0,0,0,.87);
+
+ 
+
+}
+
+element.style {
+
+  padding-left: 18px;
+
+}
+
+  .example-header-image {
+
+    background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
+
+    background-size: cover;
+
+  }
+
+
+
+  body {
+
+    height: 100vh;
+
+    margin-top: 4em;
+
+    background: #D2D0CC;
+
+  }
+
+  h1 {
+
+    text-align: center;
+
+    font-family: monospace;
+
+    font-size: 30px;
+
+  }
+
+  .container {
+
+    max-width: 800px;
+
+    margin: auto;
+
+    display: flex;
+
+    justify-content: center;
+
+    margin-top: 2em;
+
+    position: relative;
+
+    background-color: #3f51b5;
+
+    color: rgba(0,0,0,.87);
+
+   
+
+  }
+
+  .cards {
+
+    border-radius: 10px;
+
+    /* box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.2); */
+
+    position: absolute;
+
+    width: 33.33%;
+
+    transition: all 400ms ease;
+
+    background-size: cover;
+
+    background-position: center;
+
+  }
+
+  .cards:hover:not(.active).left {
+
+    transform: translateX(-50%) rotate(-10deg) scale(0.9);
+
+  }
+
+  .cards:hover:not(.active).right {
+
+    transform: translateX(50%) rotate(10deg) scale(0.9);
+
+  }
+
+  .cards.left {
+
+    transform: translateX(-50%) scale(0.9);
+
+  }
+
+  .cards.right {
+
+    transform: translateX(50%) scale(0.9);
+
+  }
+
+  .cards.active {
+
+    z-index: 5;
+
+    position: relative;
+
+  }
+
+  .cards__inner {
+
+    position: relative;
+
+    padding-bottom: 158.8235294118%;
+
+  }
+
+
+
+  .mat-card {
+
+    background: white;
+
+    color: rgba(147, 57, 57, 0.87);
+
+   
+
+}
+
+  /* .container{
+
+    position: absolute;
+
+    left: 50%;
+
+    top: 50%;
+
+    transform: translate(-50%,-50%);
+
+    text-align: center;
+
+  }
+
+    */
+
+    .btn{
+
+      border: none;
+  
+      margin: 8px;
+  
+      padding: 11px;
+  
+      width: 103px;
+  
+      font-family: "montserrat",sans-serif;
+  
+      text-transform: uppercase;
+  
+      border-radius: 6px;
+  
+      cursor: grab;
+  
+      color: #fff;
+  
+      background-size: 177%;
+  
+      transition: 0.6s;
+  
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  
+    }
+  
+     
+  
+   
+  
+     .btn3{
+  
+      background-image: linear-gradient(to left,#12CBC4,#0652DD,#12CBC4);
+  
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  
+    } 
+  
+    .btn3 {
+  
+      width: 130px;
+  
+      height: 40px;
+  
+      line-height: 42px;
+  
+      padding: 0;
+  
+      border: none;
+  
+      background: rgb(255,27,0);
+  
+    background: linear-gradient(0deg, rgba(255,27,0,1) 0%, rgba(251,75,2,1) 100%);
+  
+    } 
+    .btn3:hover {
+
+      color: #f0094a;
+  
+      background: transparent;
+  
+       box-shadow:none;
+  
+    }
+  
+    .btn3:before,
+  
+    .btn3:after{
+  
+      content:'';
+  
+      position:absolute;
+  
+      top:0;
+  
+      right:0;
+  
+      height:2px;
+  
+      width:0;
+  
+      background: #f0094a;
+  
+      box-shadow:
+  
+       -1px -1px 5px 0px #fff,
+  
+       7px 7px 20px 0px #0003,
+  
+       4px 4px 5px 0px #0002;
+  
+      transition:400ms ease all;
+  
+    }
+  
+    .btn3:after{
+  
+      right:inherit;
+  
+      top:inherit;
+  
+      left:0;
+  
+      bottom:0;
+  
+    }
+  
+    .btn3:hover:before,
+  
+    .btn3:hover:after{
+  
+      width:100%;
+  
+      transition:800ms ease all;
+  
+    }
+  
+     
+  
+  
+  
+  
+  
+    .btn1{
+
+      background-image: linear-gradient(to left,#FFC312,#EE5A24,#FFC312);
+  
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  
+    }
+  
+     
+  
+    .btn2{
+  
+      background-image: linear-gradient(to left,#C4E538,#009432,#C4E538);
+  
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  
+    }
+  
+   
+  
+     
+  
+    .btn:hover{
+  
+      background-position: right;
+  
+    }

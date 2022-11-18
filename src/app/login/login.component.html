@@ -1,0 +1,50 @@
+<!-- <div class="container">
+    <form [formGroup]="login" (ngSubmit)="logindata(login)" class="form-box">
+        <h3>Login</h3>
+        <div class="form-group">
+            <label>User Name</label>
+            <input type="text" formControlName="fname" class="form-control mb-3 mt-3" placeholder="Enter Email" />
+        </div>
+
+        <div class="form-group">
+            <label>Password</label>
+            <input type="password" formControlName="password" class="form-control mb-3 mt-3"
+                placeholder="Enter Password" />
+        </div>
+
+        <span>Create New Account </span>
+        <a routerLink="signup">Signup</a>
+        <br />
+        <button type="submit" class="btn btn-success">Login</button>
+    </form>
+</div>
+
+<router-outlet></router-outlet>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous"> -->
+
+
+
+
+ <link rel="stylesheet" href="login.component.css">
+ 
+ <link href="https://fonts.googleapis.com/css2?family=Jost:wght@500&display=swap" rel="stylesheet">
+ <!-- </head> -->
+ 
+<body>
+ 
+ <div class="main">  	
+ <input type="checkbox" id="chk" aria-hidden="true">
+
+ <app-signup></app-signup>
+
+ 
+ <div class="login">
+ <form [formGroup]="login" (ngSubmit)="logindata(login)" class="form-box">
+ <label for="chk" aria-hidden="true">Login</label>
+ <input type="email" formControlName="fname"  name="email" placeholder="Email" required="">
+ <input type="password" name="pswd" formControlName="password" placeholder="Password" required="">
+ <button  type="submit">Login</button>
+ </form>
+ </div>
+ </div>
+ </body>

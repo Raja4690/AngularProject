@@ -1,0 +1,19 @@
+<span class="input-group-text" id="basic-addon1">Comment</span>
+
+<input #commentInput (keyup)="0" type="text"  class="form-control" placeholder="Enter comments" aria-label="Username" aria-describedby="basic-addon1" />
+
+
+
+<!-- <input #cardId  value="{{card.id}}"/> -->
+
+
+
+    <button (click)="addComment(commentInput.value)" class='btn btn-primary'>Add Comment</button>
+
+      <ul>
+
+        <!-- {{comments | json}} -->
+
+        <li *ngFor="let comment of comments">{{comment.comment}}</li>
+
+      </ul>

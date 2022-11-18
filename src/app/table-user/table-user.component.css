@@ -1,0 +1,41 @@
+
+  
+        /* Set the content of table 
+        using css properties */
+        body {
+            width: 400px;
+            margin: auto;
+            text-align: center;
+            table-layout: fixed;
+        }
+  
+        
+        table,
+        td,
+        tr {
+            padding: 0px;
+            color: wheat;
+            background: #7a5ff0fa;
+            border: 1px solid black;
+            border-collapse: collapse;
+            font-size: 13px;
+            font-family: 'Lucida Sans', 
+                'Lucida Sans Regular',
+                'Lucida Grande', 
+                'Lucida Sans Unicode',
+                Geneva, Verdana, sans-serif;
+        }
+  
+        /* Apply css properties to th */
+        th {
+            color: white;
+            border: 1px solid black;
+            border-collapse: collapse;
+            background: cadetblue;
+        }
+  
+        /* Apply hover effect to td */
+        td:hover {
+            background: #517da9;
+        }
+   

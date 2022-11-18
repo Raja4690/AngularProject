@@ -1,0 +1,69 @@
+<br>
+<br>
+
+
+<div *ngIf="message" class="alert alert-success" role="alert">
+    {{message}}
+</div>
+
+<div class="input-group mb-3">
+    <span class="input-group-text" id="basic-addon1">Title</span>
+    <input #title (keyup)="0" type="text" class="form-control" placeholder="Enter Title" aria-label="Username"
+        aria-describedby="basic-addon1" />
+</div>
+
+<div class="input-group mb-3">
+    <span class="input-group-text" id="basic-addon1">Author</span>
+    <input #author (keyup)="0" type="text" class="form-control" placeholder="Enter author name" aria-label="Username"
+        aria-describedby="basic-addon1" />
+</div>
+
+<div class="input-group mb-3">
+    <span class="input-group-text" id="basic-addon1">Description</span>
+    <input #description (keyup)="0" type="text" class="form-control" placeholder="Enter description"
+        aria-label="Username" aria-describedby="basic-addon1" />
+</div>
+<div ng-app="">
+<div class="input-group mb-3">
+    <span class="input-group-text" id="basic-addon1">Image</span>
+    <input #image (keyup)="0" type="text" class="form-control" placeholder="Image URL" aria-label="Username"
+        aria-describedby="basic-addon1"  ng-model="all"/>
+</div>
+<div class="input-group mb-3"  ng-disabled="all">
+    <span class="input-group-text" id="basic-addon1"  ng-disabled="all">Video</span>
+    <input #source (keyup)="0" type="text" class="form-control" placeholder="Video URL" aria-label="Username"
+        aria-describedby="basic-addon1" ng-disabled="all"/>
+</div>
+</div>
+
+<div class="input-group mb-3"  ng-disabled="all">
+
+    <span class="input-group-text" id="basic-addon1"  ng-disabled="all">Date</span>
+
+    <!-- <input #date (keyup)="0" type="date"  class="form-control" aria-label="Username"
+
+        aria-describedby="basic-addon1" ng-disabled="all"/>
+
+         -->
+
+         <input #date (keyup)="0" type="date"  class="form-control"
+
+       [ngModel]="today | date:'yyyy-MM-dd'"  >
+
+</div>
+
+
+
+
+
+<div class="input-group mb-3">
+    <a
+    routerLink="/view">
+    <button (click)="addPost(title.value, author.value, description.value, image.value,source.value,date.value)" class='btn btn-primary'>Post
+
+        Card </button></a>
+
+</div>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+

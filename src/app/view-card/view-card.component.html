@@ -1,0 +1,166 @@
+<!-- <div class="container">
+ </div>
+  
+<mat-card class="example-card" style="padding-left: 10px;" *ngFor="let card of cardService.cards">
+  <mat-card-header>
+    <div mat-card-avatar class="example-header-image"></div>
+    <mat-card-title>{{card.title}}</mat-card-title>
+    <mat-card-subtitle>{{card.author}}</mat-card-subtitle>
+  </mat-card-header>
+  <img mat-card-image src="{{card.image}}" >
+  <video style="width: 618px;"  loop muted autoplay oncanplay="this.play()" onloadedmetadata="this.muted = true">
+
+    <source  src="{{card.source}}" type="video/mp4">
+
+  </video>
+
+  <mat-card-content>
+    <p>
+      {{card.description}}
+    </p>
+  </mat-card-content>
+  <div class="container">
+  <mat-card-actions>
+    <button class="btn btn1" ><app-badge></app-badge></button>
+    <button class="btn btn2" ><app-view-comments [postId]= "card.id"></app-view-comments></button>
+  
+    <button class="btn btn3" (click)="deleteCard(card.id)">Delete</button>
+  </mat-card-actions>
+</div>
+</mat-card> -->
+
+
+
+<!-- div class="card mb-3" style="max-width: 540px;"*ngFor="let card of cardService.cards">
+  <div class="row g-0">
+    <div class="col-md-4">
+      <img
+        src="https://mdbcdn.b-cdn.net/wp-content/uploads/2020/06/vertical.webp"
+        alt="Trendy Pants and Shoes"
+        class="img-fluid rounded-start"
+      />
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h5 class="card-title">{{card.title}}</h5>
+        <h3 class="card-subtitle">{{card.author}}</h3>
+        <p class="card-text">
+          <app-view-comments [postId]= "card.id"></app-view-comments>
+        <p class="card-text">
+          <small class="text-muted">Last updated 3 mins ago</small>
+        </p>
+      </div>
+    </div>
+  </div>
+</div> -->
+
+
+<!-- <div class="card">
+  <h2 class="title">Card</h2>
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat.</p>
+</div>
+
+<div class="card animate">
+  <h2 class="title">Animated Card</h2>
+  <p>Duis aute irure dolor in reprehenderit in voluptate velit esse
+cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+</div> -->
+
+
+
+
+
+
+<div class="card  card--z-0" style="height: 80px;
+background-color: bisque;">
+ <mat-card-title>
+
+  <!-- <span class="input-group-text" id="basic-addon1">Search Posts</span> -->
+
+<input #description (keyup)="0" type="text"  class="form-control" placeholder="Search Posts" aria-label="Username" aria-describedby="basic-addon1" style="    margin-left: 525px;
+
+font-size: large;
+
+border-radius: 9px;
+
+padding: 6px;
+
+margin-top: 20px;
+"/> <mat-icon style="    height: 20px;">search</mat-icon>
+
+</mat-card-title></div>
+<br><br>
+
+<!-- <div class="input-group mb-3"> -->
+
+
+
+
+<mat-card class="example-card" style="margin-left: 323px;    margin-bottom: 30px;  background: linear-gradient(93.51deg, #b38ed6 2.84%, #89b6f1 99.18%);" *ngFor="let card of cardService.cards | search: description.value">
+
+  <mat-card-header>
+
+    <div mat-card-avatar class="example-header-image"></div>
+
+    <mat-card-title>{{card.title}}</mat-card-title>
+
+    <button class="btn btn3" style=" width: 38px;
+
+    height: 35px;
+
+    line-height: 36px;
+
+    padding: 0px;
+
+    margin-left: 381px;" (click)="deleteCard(card.id)">X</button>
+
+    <mat-card-subtitle>{{card.author}}</mat-card-subtitle>
+
+ 
+
+  </mat-card-header>
+
+  <img mat-card-image style="width: calc(100% + 0px);margin: 0px -14px 16px 1px;" src="{{card.image}}" >
+
+  <video style="width: 600px;"  loop muted autoplay oncanplay="this.play()" onloadedmetadata="this.muted = true">
+
+
+
+    <source  src="{{card.source}}" type="video/mp4">
+
+
+
+  </video>
+  <mat-card-content>
+
+    <p>
+
+      {{card.description}}
+
+    </p>
+
+  </mat-card-content>
+
+  <div class="container">
+
+  <mat-card-actions>
+
+    <button class="btn btn1" ><app-badge></app-badge></button>
+
+    <button class="btn btn2"  style="
+    width: 235px;
+"><app-view-comments [postId]= "card.id"></app-view-comments></button>
+
+  
+
+   
+
+  </mat-card-actions>
+
+</div>
+
+</mat-card> 
